@@ -1,0 +1,33 @@
+extends layouts/default
+
+mixin entry(css)
+  section(class!=css)
+    .container
+      .row
+        .col-xs-12
+          block
+
+block content
+  .container
+    section#navigation.row
+      .col-xs-12
+        include ./layouts/navbar.jade
+  .container-fluid
+    header.row
+      .col-xs-12
+        hgroup
+          h1 Dominik
+          h2 Kundel
+          h3 Front-End Web Developer | Software Engineer
+  #mainContent
+    +entry('entry main')
+      include:markdown ./pages/about.md
+    +entry('entry alternate1')
+      include:markdown ./pages/projects.md
+    +entry('entry alternate2')
+      include:markdown ./pages/resume.md
+    +entry('entry main')
+      include:markdown ./pages/contact.md
+      
+  .container-fluid
+    include ./layouts/footer.jade

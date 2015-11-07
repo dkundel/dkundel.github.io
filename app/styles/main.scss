@@ -1,0 +1,105 @@
+$icon-font-path: '../fonts/';
+
+@import "bootstrap-theme.scss";
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+$color1: #2b3e50; //rgba(43, 62, 80, 100)
+$color2: #03a678; //rgba(3, 166, 120, 100)
+$color3: #0c0c0f; //rgba(12, 12, 15, 100)
+$color4: #837cbc; //rgba(131, 124, 188, 100)
+$color5: #D3D5D4; //rgba(213, 200, 175, 100)
+
+#logo {
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: 900;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  
+  &:hover {
+    transform: skew(-15deg);
+    color: $color2;
+  }
+}
+
+header > .col-xs-12 {
+  position: relative;
+  height: 547px;
+  background-color: #2B3E50;
+  background: url('/images/background.png') center center no-repeat;
+  hgroup {
+    position: relative;
+    text-align: center;
+    width: 400px;
+    height: 110px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+    h1 {
+      margin-bottom: 0;
+      width: 100%;
+      position: absolute;
+      font-size: 50px;
+      font-family: 'Permanent Marker';
+      z-index: 1;
+    }
+    
+    h2 {
+      position: absolute;
+      text-align: center;
+      font-size: 80px;
+      font-weight: 900;
+      text-transform: uppercase;
+      width: 100%;
+      margin-top: 0;
+      top: -15px;
+      color: #2B3E50;
+      text-shadow: 1px 1px 7px rgba(0,0,0,0.8);
+      z-index: 0;
+      top: 5px;
+    }
+    
+    h3 {
+      position: absolute;
+      font-size: 18px;
+      width: 100%;
+      top: 71px;
+      font-weight: 100;
+    }
+  }
+}
+
+#mainContent {
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0px 1px 8px rgba(0,0,0,0.8); 
+}
+
+section.entry {
+  &.main {
+    background: $color2;
+    color: #fff;
+  }
+  
+  &.alternate1 {
+    background: $color4;
+    color: #fff;
+  }
+  
+  &.alternate2 {
+    background: $color5;
+    color: $color3;
+  }
+}
+
