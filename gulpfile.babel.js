@@ -110,7 +110,7 @@ gulp.task('images', () => {
 gulp.task('fonts', () => {
   return gulp.src(require('main-bower-files')({
     filter: '**/*.{eot,svg,ttf,woff,woff2}'
-  }).concat('app/fonts/**/*'))
+  }).concat('app/fonts/**/*').concat('bower_components/fontawesome/fonts/**/*'))
     .pipe(gulp.dest('.tmp/fonts'))
     .pipe(gulp.dest('dist/fonts'));
 });
@@ -206,7 +206,9 @@ gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => {
 
 gulp.task('deploy', ['build'], () => {
   return gulp.src('dist')
-    .pipe($.subtree())
+    .pipe($.subtree({
+      branch: 'master'
+    }))
     .pipe($.clean());
 });
 

@@ -8,11 +8,12 @@ mixin entry(css)
           block
 
 block content
-  .container
-    section#navigation.row
-      .col-xs-12
-        include ./layouts/navbar.jade
-  .container-fluid
+  #stickyHeader
+    .container
+      section#navigation.row
+        .col-xs-12
+          include ./layouts/navbar.jade
+  #home.container-fluid
     header.row
       .col-xs-12
         hgroup

@@ -1,29 +1,44 @@
 {
   "basics": {
-    "name": "Richard Hendriks",
-    "label": "Programmer",
+    "name": "Dominik Kundel",
+    "label": "Web Developer | Software Engineer",
     "picture": "",
-    "email": "richard.hendriks@gmail.com",
-    "phone": "(912) 555-4321",
-    "website": "http://richardhendricks.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "email": "dominik.kundel@gmail.com",
+    "phone": "+353 83 161 9709",
+    "website": "http://kundel.co",
+    "summary": "TODO",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "902 Vantage Central, Building 4, Central Park",
+      "postalCode": "Dublin 18",
+      "city": "Dublin",
+      "countryCode": "IE",
+      "region": ""
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
+        "username": "dkundel",
+        "url": "https://twitter.com/dkundel"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.com/dandymusicnl"
+        "network": "Facebook",
+        "username": "dominik402",
+        "url": "https://fb.com/dominik402"
+      },
+      {
+        "network": "GitHub",
+        "username": "dkundel",
+        "url": "https://github.com/dkundel"
+      },
+      {
+        "network": "CodePen",
+        "username": "dkundel",
+        "url": "https://codepen.io/dkundel"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "dkundel",
+        "url": "https://de.linkedin.com/in/dkundel"
       }
     ]
   },

@@ -4,9 +4,9 @@ mixin socialMediaButton(icon, title, url)
     | &nbsp; &nbsp;
     = title
 
-h1 Contact
+h1#contact Contact
 
-h4 Find me on various platforms...
+h4 You can find me on various platforms...
 .row
   .col-xs-12
     +socialMediaButton('fa-github', 'GitHub', 'https://github.com/dkundel')
@@ -16,7 +16,7 @@ h4 Find me on various platforms...
     +socialMediaButton('fa-facebook', 'Facebook', 'https://fb.com/dominik402')
 
 #formContainer
-  h4 ...or send me an email:
+  h4 ...or just send me an email:
   .row
     .col-xs-12.col-sm-10.col-md-8.col-lg-6
       form#contactForm

@@ -4,7 +4,8 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
-    "fontawesome": "~4.4.0"
+    "fontawesome": "~4.4.0",
+    "jquery.scrollTo": "~2.1.2"
   },
   "overrides": {
     "bootstrap-sass": {
