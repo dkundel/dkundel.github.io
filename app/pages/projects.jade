@@ -1,0 +1,79 @@
+mixin bulletPoints(title, list)
+  p.project-list--title
+    strong= title
+  ul.fa-ul.project-list--ul
+    each val in list
+      li.small
+        i.fa-li.fa.fa-angle-right
+        = val
+
+mixin projectContent(project)
+  h3
+    if project.website
+      a.project-title(href=project.website, target='_blank')= project.title
+    else
+      span.project-title= project.title
+    small.project-timeframe.pull-right
+      = project.startDate + (project.endDate ? ' to ' + project.endDate : '')
+  p.project-summary= project.summary
+  if project.highlights && project.highlights.length !== 0
+    +bulletPoints('Highlights', project.highlights)
+  if project.contributions && project.contributions.length !== 0
+    +bulletPoints('Contributions', project.contributions)
+  if project.repositories && project.repositories.length !== 0
+    p.project-repositories
+      each repo in project.repositories
+        a.btn.btn-sm.btn-default(href=repo.url, target='_blank')
+          span.fa(class='fa-'+repo.type)
+          span= repo.title
+    
+  
+mixin leftEntry(project)
+  .row.project-entry
+    .col-xs-12.col-sm-6.col-md-5.col-lg-4.text-center
+      if project.website
+        a(href=project.website, target='_blank')
+          img.img-responsive(src=project.image)
+      else
+        img.img-responsive(src=project.image)
+        
+    .col-xs-12.col-sm-6.col-md-7.col-lg-8
+      +projectContent(project)
+
+mixin rightEntry(project)
+  .row.project-entry
+    .col-xs-12.visible-xs-block.text-center
+      if project.website
+        a(href=project.website, target='_blank')
+          img.img-responsive(src=project.image)
+      else
+        img.img-responsive(src=project.image)
+    .col-xs-12.col-sm-6.col-md-7.col-lg-8
+      +projectContent(project)
+    .col-xs-12.col-sm-6.col-md-5.col-lg-4.hidden-xs.text-center
+      if project.website
+        a(href=project.website, target='_blank')
+          img.img-responsive(src=project.image)
+      else
+        img.img-responsive(src=project.image)
+
+h1#projects Projects
+
+p Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans cake. Cookie bear claw icing cookie tiramisu chocolate cake dessert brownie.
+
+each proj, index in projects.projects
+  if index % 2 === 0
+    +leftEntry(proj)
+  else
+    +rightEntry(proj)
+ 
+.external-profiles     
+  p.lead.text-center For more projects check out my profiles below
+        
+  p.text-center
+    a.btn.btn-default(href='https://github.com/dkundel', target='_blank')
+      span.fa.fa-github
+      | My GitHub Profile
+    a.btn.btn-default(href='https://codepen.io/dkundel', target='_blank')
+      span.fa.fa-codepen
+      | My CodePen Profile

@@ -73,7 +73,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    inherit;
-$headings-font-weight:    400;
+$headings-font-weight:    200;
 $headings-line-height:    1.1;
 $headings-color:          inherit;
 
@@ -83,7 +83,7 @@ $headings-color:          inherit;
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
 //** Load fonts from this directory.
-$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/");
+$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
 //** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular";
 //** Element ID within SVG icon file.

@@ -7,6 +7,9 @@ import {stream as wiredep} from 'wiredep';
 import sourcemaps from 'gulp-sourcemaps';
 import babel from 'gulp-babel';
 import concat from 'gulp-concat';
+import data from 'gulp-data';
+import jade from 'gulp-jade';
+import fs from 'fs';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -38,9 +41,21 @@ gulp.task('styles', () => {
     .pipe(reload({stream: true}));
 });
 
+function loadTemplatingData(filenames) {
+  return (file) => {
+    var data = {};
+    filenames.forEach((filename) => {
+      data[filename] = JSON.parse(fs.readFileSync(`./app/data/${filename}.json`))
+    });
+    
+    return data;
+  }
+}
+
 gulp.task('views', () => {
   return gulp.src('app/*.jade')
-    .pipe($.jade({pretty: true}))
+    .pipe(data(loadTemplatingData(['resume', 'projects'])))
+    .pipe(jade({pretty: true}))
     .pipe(gulp.dest('.tmp'))
     .pipe(reload({stream: true}));
 });
@@ -134,8 +149,11 @@ gulp.task('serve', ['views', 'styles', 'fonts', 'scripts'], () => {
   ]).on('change', reload);
 
   gulp.watch('app/styles/**/*.scss', ['styles']);
+  gulp.watch('app/**/*.jade', ['views']);
+  gulp.watch('app/**/*.md', ['views']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
+  gulp.watch('app/data/**/*.json', ['views']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
 

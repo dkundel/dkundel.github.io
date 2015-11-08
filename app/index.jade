@@ -4,7 +4,7 @@ mixin entry(css)
   section(class!=css)
     .container
       .row
-        .col-xs-12
+        .col-xs-10.col-xs-offset-1.col-sm-12.col-sm-offset-0.col-md-12.col-md-offset-0
           block
 
 block content
@@ -21,13 +21,13 @@ block content
           h3 Front-End Web Developer | Software Engineer
   #mainContent
     +entry('entry main')
-      include:markdown ./pages/about.md
+      include ./pages/about.jade
     +entry('entry alternate1')
-      include:markdown ./pages/projects.md
+      include ./pages/projects.jade
     +entry('entry alternate2')
-      include:markdown ./pages/resume.md
+      include ./pages/resume.jade
     +entry('entry main')
-      include:markdown ./pages/contact.md
+      include ./pages/contact.jade
       
   .container-fluid
     include ./layouts/footer.jade

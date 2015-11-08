@@ -1,0 +1,28 @@
+mixin aboutEntry(image, icon, title)
+  .about-entry
+    .about-entry-header
+      img.img-responsive(src=image)
+    .about-entry-icon
+      span(class=icon)
+    h3= title
+    block
+
+h1#about About Me
+
+p.
+  Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans cake. Cookie bear claw icing cookie tiramisu chocolate cake dessert brownie.
+p.
+  Pudding lemon drops liquorice brownie cookie jujubes wafer pastry. Jelly beans cotton candy brownie wafer pastry. Muffin tootsie roll jelly dessert gummies.
+p.
+  Marshmallow toffee tootsie roll. Jelly-o danish pastry biscuit cake macaroon dragée marzipan soufflé. Gummi bears lemon drops topping pie sugar plum jelly beans sesame snaps.
+  
+.about-entries
+  +aboutEntry('/images/coding.jpg', 'fa fa-3x fa-code', 'Programming')
+    p.
+      Some content Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans.
+  +aboutEntry('/images/design.jpg', 'fa fa-3x fa-pencil', 'Design')
+      p.
+        Some content Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans.
+  +aboutEntry('/images/coding-workshops.jpg', 'fa fa-3x fa-comments', 'Teaching')
+      p.
+        Some content Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans.

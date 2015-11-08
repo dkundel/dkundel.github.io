@@ -1,0 +1,36 @@
+mixin socialMediaButton(icon, title, url)
+  a.btn.btn-primary.btn-border--white.contact-btn(href=url, target='_blank')
+    span.fa(class=icon)
+    | &nbsp; &nbsp;
+    = title
+
+h1 Contact
+
+h4 Find me on various platforms...
+.row
+  .col-xs-12
+    +socialMediaButton('fa-github', 'GitHub', 'https://github.com/dkundel')
+    +socialMediaButton('fa-codepen', 'CodePen', 'https://codepen.io/dkundel')
+    +socialMediaButton('fa-twitter', 'Twitter', 'https://twitter.com/dkundel')
+    +socialMediaButton('fa-linkedin', 'LinkedIn', 'https://de.linkedin.com/in/dkundel')
+    +socialMediaButton('fa-facebook', 'Facebook', 'https://fb.com/dominik402')
+
+#formContainer
+  h4 ...or send me an email:
+  .row
+    .col-xs-12.col-sm-10.col-md-8.col-lg-6
+      form#contactForm
+        .form-group
+          label(for='nameInput') Name
+          input#nameInput.form-control(type='text', placeholder='Your Name')
+        .form-group
+          label(for='emailInput') From
+          input#emailInput.form-control(type='email', placeholder='Email')
+        .form-group
+          label(for='messageInput') Message
+          textarea#messageInput.form-control(rows='4', placeholder='Hi Dominik, ...')
+        button.btn.btn-default(type='submit') Send Email      
+
+#contactThankYou.row
+  .col-xs-12
+    p.lead.text-center Thanks for contacting me! I'll try to respond as soon as possible :)

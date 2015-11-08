@@ -1,0 +1,72 @@
+{
+  "projects": [
+    
+    {
+      "title": "jacobsHack!",
+      "website": "https://jacobshack.com/",
+      "image": "/images/projects/jacobshack.png",
+      "summary": "Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans cake. Cookie bear claw icing cookie tiramisu chocolate cake dessert brownie.",
+      "startDate": "2015-01-01",
+      "endDate": "2015-12-31",
+      "highlights": ["Highlight 1", "HIghlight 2"],
+      "contributions": ["Contribution1", "Contribution2"],
+      "repositories": [
+        {
+          "url": "https://github.com/dkundel/jacobshack.com",
+          "title": "Website Code",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "title": "Mind The App",
+      "website": "http://devpost.com/software/mind-the-app",
+      "image": "/images/projects/mindtheapp.png",
+      "summary": "Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans cake. Cookie bear claw icing cookie tiramisu chocolate cake dessert brownie.",
+      "startDate": "2015-01-01",
+      "endDate": "",
+      "highlights": [],
+      "contributions": ["Contribution1", "Contribution2"],
+      "repositories": [
+        {
+          "url": "https://github.com/dkundel/mind-the-app",
+          "title": "Source Code",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "title": "Dare.",
+      "website": "http://www.hackathon.io/25699",
+      "image": "/images/projects/dare.png",
+      "summary": "Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans cake. Cookie bear claw icing cookie tiramisu chocolate cake dessert brownie.",
+      "startDate": "2015-01-01",
+      "endDate": "2015-12-31",
+      "highlights": [],
+      "contributions": ["Contribution1", "Contribution2"],
+      "repositories": [
+        {
+          "url": "https://github.com/dkundel/dare-server",
+          "title": "Server Code",
+          "type": "github"
+        },
+        {
+          "url": "https://github.com/ungureanuvladvictor/dare-android",
+          "title": "Client Code",
+          "type": "github"  
+        }
+      ]
+    },
+    {
+      "title": "Social Roadtrip",
+      "website": "",
+      "image": "/images/projects/socialroadtrip.png",
+      "summary": "Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans cake. Cookie bear claw icing cookie tiramisu chocolate cake dessert brownie.",
+      "startDate": "2015-01-01",
+      "endDate": "2015-12-31",
+      "highlights": [],
+      "contributions": ["Contribution1", "Contribution2"],
+      "repositories": []
+    }
+  ]
+}
