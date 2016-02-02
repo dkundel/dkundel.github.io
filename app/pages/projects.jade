@@ -5,7 +5,7 @@ mixin bulletPoints(title, list)
     each val in list
       li.small
         i.fa-li.fa.fa-angle-right
-        = val
+        != pfm(val)
 
 mixin projectContent(project)
   h3
@@ -15,7 +15,7 @@ mixin projectContent(project)
       span.project-title= project.title
     small.project-timeframe.pull-right
       = project.startDate + (project.endDate ? ' to ' + project.endDate : '')
-  p.project-summary= project.summary
+  p.project-summary!= pfm(project.summary)
   if project.highlights && project.highlights.length !== 0
     +bulletPoints('Highlights', project.highlights)
   if project.contributions && project.contributions.length !== 0
@@ -59,7 +59,9 @@ mixin rightEntry(project)
 
 h1#projects Projects
 
-p Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans cake. Cookie bear claw icing cookie tiramisu chocolate cake dessert brownie.
+:pfm
+  Most of my projects are being created at hackathons. I chose some of the most interesting and successful ones and gave them a stage here.
+  For more projects feel free to check out my profiles below. On my GitHub page, you'll find additionally slides and demos from various presentations I gave. 
 
 each proj, index in projects.projects
   if index % 2 === 0

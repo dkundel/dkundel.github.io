@@ -9,6 +9,7 @@ import babel from 'gulp-babel';
 import concat from 'gulp-concat';
 import data from 'gulp-data';
 import jade from 'gulp-jade';
+import run from 'gulp-run';
 import fs from 'fs';
 
 const $ = gulpLoadPlugins();
@@ -35,7 +36,7 @@ gulp.task('styles', () => {
       precision: 10,
       includePaths: ['.']
     }).on('error', $.sass.logError))
-    .pipe($.autoprefixer({browsers: ['last 1 version']}))
+    .pipe($.autoprefixer({browsers: ['> 1%','last 2 versions']}))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
@@ -43,7 +44,9 @@ gulp.task('styles', () => {
 
 function loadTemplatingData(filenames) {
   return (file) => {
-    var data = {};
+    var data = {
+      pfm: require('pfm')
+    };
     filenames.forEach((filename) => {
       data[filename] = JSON.parse(fs.readFileSync(`./app/data/${filename}.json`))
     });
@@ -117,6 +120,7 @@ gulp.task('fonts', () => {
 
 gulp.task('extras', () => {
   return gulp.src([
+    'app/CNAME',
     'app/*.*',
     '!app/*.html',
     '!app/*.jade'
@@ -167,6 +171,21 @@ gulp.task('serve:dist', () => {
   });
 });
 
+gulp.task('resume', ['build'], () => {
+  browserSync({
+    notify: false,
+    port: 9000,
+    server: {
+      baseDir: ['dist']
+    }
+  }, () => {
+    run('utils/create-resume.sh', (err) => {
+      console.log(err);
+      console.log('DONE');
+    });
+  });
+});
+
 gulp.task('serve:test', () => {
   browserSync({
     notify: false,
@@ -208,8 +227,7 @@ gulp.task('deploy', ['build'], () => {
   return gulp.src('dist')
     .pipe($.subtree({
       branch: 'master'
-    }))
-    .pipe($.clean());
+    }));
 });
 
 gulp.task('default', ['clean'], () => {

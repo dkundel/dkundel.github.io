@@ -1,0 +1,395 @@
+$icon-font-path: '../fonts/';
+@import "fonts";
+@import "bootstrap-theme";
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/fontawesome/scss/font-awesome.scss";
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+$color1: #2b3e50; //rgba(43, 62, 80, 100)
+$color2: #03a678; //rgba(3, 166, 120, 100)
+$color3: #0c0c0f; //rgba(12, 12, 15, 100)
+$color4: #837cbc; //rgba(131, 124, 188, 100)
+$color5: #D3D5D4; //rgba(213, 200, 175, 100)
+
+$darkgray: lighten(#0c0c0f, 20%);
+$mediumgray: lighten(#0c0c0f, 40%);
+$lightgray: lighten(#0c0c0f, 60%);
+
+body {
+  font-weight: 300;
+  font-style: normal;
+  position: relative;
+}
+
+strong {
+  font-weight: 400;
+}
+
+#logo {
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: 900;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  color: #fff;
+  
+  &:hover, &:focus {
+    transform: skew(-15deg);
+    color: $color2;
+    background: inherit;
+  }
+}
+
+#stickyHeader {
+  width: 100%;
+  background-color: $color1;
+  z-index: 9999;
+}
+
+header > .col-xs-12 {
+  position: relative;
+  height: 681px;
+  background-color: #2B3E50;
+  background: url('/images/background.png') center center no-repeat;
+  hgroup {
+    position: relative;
+    text-align: center;
+    width: 410px;
+    height: 110px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-user-select: none;        
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+    h1 {
+      margin-bottom: 0;
+      width: 100%;
+      position: absolute;
+      font-size: 65px;
+      font-family: 'Permanent Marker';
+      z-index: 1;
+    }
+    
+    h2 {
+      position: absolute;
+      text-align: center;
+      font-size: 100px;
+      font-weight: 900;
+      text-transform: uppercase;
+      width: 100%;
+      margin-top: 0;
+      top: -15px;
+      color: #2B3E50;
+      text-shadow: 1px 1px 7px #000;
+      z-index: 0;
+      top: 5px;
+    }
+    
+    h3 {
+      position: absolute;
+      font-size: 18px;
+      width: 100%;
+      top: 91px;
+      font-weight: 100;
+    }
+  }
+}
+
+#mainContent {
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0px 1px 8px rgba(0,0,0,0.8); 
+}
+
+.nav-tabs > li.active > a {
+  &, &:hover {
+    cursor: pointer;
+  }
+}
+
+section.entry {
+  padding-bottom: 15px;
+  
+  &.main {
+    background: $color2;
+    color: #fff;
+    
+    a {
+      &, &:hover, &:focus {
+        color: #fff;
+        font-weight: 400;  
+      } 
+    }
+    
+    hr {
+      border-color: darken($color2, 5%);
+    }
+  }
+  
+  &.alternate1 {
+    background: $color4;
+    color: #fff;
+    
+    a {
+      &, &:hover, &:focus {
+        color: #fff;
+        font-weight: 400;  
+      } 
+    }
+  }
+  
+  &.alternate2 {
+    background: $color5;
+    color: $color3;
+  }
+}
+
+.about-entries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: stretch;
+  
+  > .about-entry {
+    color: #000;
+    width: 320px;
+    height: 560px;
+    box-sizing: border-box;
+    text-align: left;
+    background: $color5;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+    
+    &:hover, &:focus {
+      box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    }
+    
+    .about-entry-header {
+      height: 200px;
+      overflow: hidden;
+    }
+    
+    .about-entry-icon {
+      border-radius: 100%;
+      background: $color5;
+      position: absolute;
+      text-align: center;
+      width: 75px;
+      height: 75px;
+      margin-left: -37.5px;
+      left: 50%;
+      margin-top: -37.5px;
+      
+      > span {
+        color: $color3;
+        line-height: 1.75;  
+      }
+    }
+    
+    h3 {
+      margin-top: 40px;
+      text-align: center;
+    }
+    
+    p {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    
+    p, li {
+      > a {
+        &, &:hover, &:focus {
+          color: $color2;
+          font-weight: 200;  
+        } 
+      }
+    }
+  }
+}
+
+@keyframes beatingHeart {
+  from {
+    color: $color2;
+    font-size: 19px;
+  }
+  
+  to {
+    color: lighten($color2, 10%);
+    font-size: 21px;
+  }
+}
+
+footer {
+  h4 {
+    line-height: 38px;
+    vertical-align: bottom;
+  }
+  
+  .fa {
+    color: $color2;
+  }
+  
+  .fa-heart {
+    animation: beatingHeart 1s linear 0s infinite alternate;
+  }
+}
+
+.btn-border--white {
+  &, &:hover, &:focus {
+    border-color: #fff;
+  }
+}
+
+.contact-btn {
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#contactThankYou {
+  display: none;
+}
+
+#resumePaper {
+  background: #fff;
+  box-shadow: 0px 8px 10px rgba(0,0,0,0.4);
+  padding-bottom: 40px;
+  
+  hr {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .institutional-entry {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    &:first-of-type {
+      padding-top: 0;
+    }
+    
+    &:last-of-type {
+      border-bottom: none;
+    }
+    
+    .institute {
+      font-weight: 400;
+      margin-bottom: 0;
+      
+      a {
+        &, &:hover, &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+    
+    .timeframe {
+      color: $darkgray;
+      font-size: 85%;
+    }
+    
+    .occupation {
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+    
+    .subheading {
+      font-weight: 400;
+      color: #888;
+    }
+  }
+  
+  .skill-entry {
+    
+  }
+  
+  .language-entry {
+    
+  }
+}
+
+#resumeDownloadButton {
+  margin-top: 30px;
+}
+
+.project-entry {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lighten($color4, 10%);
+  
+  &:first-of-type {
+    border-top: 1px solid lighten($color4, 10%);
+  }
+  
+  .project-title {
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.2s ease-in;
+    
+    &:hover, &:focus {
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+      text-decoration: none;
+    }
+  }
+  
+  span.project-title {
+    cursor: default;
+  }
+  
+  .project-timeframe {
+    font-weight: 200;
+  }
+  
+  .project-timeframe {
+    
+  }
+  
+  .project-repositories {
+    .btn {
+      margin-right: 10px;
+    }
+    
+    span.fa {
+      margin-right: 10px;
+    }
+  }
+}
+
+.external-profiles {
+  padding-top: 20px;
+  
+  .btn {
+    margin-right: 10px;
+  }
+  
+  &:last-child {
+    margin-right: 0;
+  }
+  
+  span.fa {
+    margin-right: 10px;
+  }
+}
+
+p {
+  text-align: justify;
+}

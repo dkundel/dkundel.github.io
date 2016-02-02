@@ -5,11 +5,19 @@
       "title": "jacobsHack!",
       "website": "https://jacobshack.com/",
       "image": "/images/projects/jacobshack.png",
-      "summary": "Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans cake. Cookie bear claw icing cookie tiramisu chocolate cake dessert brownie.",
-      "startDate": "2015-01-01",
-      "endDate": "2015-12-31",
-      "highlights": ["Highlight 1", "HIghlight 2"],
-      "contributions": ["Contribution1", "Contribution2"],
+      "summary": "In February 2014, I co-founded [jacobsHack!](https://jacobshack.com) with the goal to promote hackathons at the university and motivate students to work on projects outside of their academic schedule. The first edition took place in the study area of a college dorm for 24-hours and was an internal hackathon. In October 2014 we took [jacobsHack!](https://jacobshack.com) to a bigger venue on campus and opened registrations for students outside of Jacobs University Bremen. We managed to secure top sponsors and got amazing feedback on the event. After graduating, I moved into an advisory role helping the new main organizers to create the third edition of [jacobsHack!](https://jacobshack.com) in October 2015 with 180 participants. Additionally, I took over jobs that were doable remotely such as the maintenance of the registration portal and getting the main organizers in contact with potential sponsors.",
+      "startDate": "2015-02-01",
+      "endDate": "date",
+      "highlights": [
+        "Secured major sponsors such as Microsoft, Google and SAP for the first and second edition.",
+        "The first open edition in Fall 2014 had 85 participants from all over Europe and the USA.",
+        "In Fall 2015 we had 180 participants from 20 countries and 40 nationalities."
+      ],
+      "contributions": [
+        "Designed logo as well as most promotional material in 2014 and 2015. Including stickers, t-shirts, sweatpants, jackets, rollups, etc.",
+        "Created the landing pages for [2014](https://2014f.jacobshack.com) and [2015](https://2015f.jacobshack.com).",
+        "Created the [custom registration portal](https://my.jacobshack.com)."
+      ],
       "repositories": [
         {
           "url": "https://github.com/dkundel/jacobshack.com",
@@ -22,11 +30,16 @@
       "title": "Mind The App",
       "website": "http://devpost.com/software/mind-the-app",
       "image": "/images/projects/mindtheapp.png",
-      "summary": "Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans cake. Cookie bear claw icing cookie tiramisu chocolate cake dessert brownie.",
-      "startDate": "2015-01-01",
-      "endDate": "",
-      "highlights": [],
-      "contributions": ["Contribution1", "Contribution2"],
+      "summary": "At [KairosHacks 2015](http://kairoshacks2015.devpost.com), we decided to create an app that allows you to easily create quick contextual reminders. These reminders could be associated either with websites you visit in your browser or apps you open on your phone. Being connected to the cloud using Azure Mobile Services it allows you to set a quick reminder on the go that the next time you open Amazon on your computer you want to order a certain item.",
+      "startDate": "2015-02-28",
+      "endDate": "2015-03-01",
+      "highlights": [
+        "Third prize at [KairosHacks 2015](http://kairoshacks2015.devpost.com/)."
+      ],
+      "contributions": [
+        "Created a Chrome extension connected to Azure Mobile Services.",
+        "Designed logo and appearance of the app/extension."
+      ],
       "repositories": [
         {
           "url": "https://github.com/dkundel/mind-the-app",
@@ -39,11 +52,16 @@
       "title": "Dare.",
       "website": "http://www.hackathon.io/25699",
       "image": "/images/projects/dare.png",
-      "summary": "Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans cake. Cookie bear claw icing cookie tiramisu chocolate cake dessert brownie.",
-      "startDate": "2015-01-01",
-      "endDate": "2015-12-31",
-      "highlights": [],
-      "contributions": ["Contribution1", "Contribution2"],
+      "summary": "There is nothing more fun than to challenge and get challenged. Challenges are everywhere on the web and offline. Some are charity challenges like the ice bucket challenge others are just fun. We decided to create an app at [AngelHack Barcelona 2013](http://www.hackathon.io/apphack3) that allows you to easily create challenges to your friends and allow them an easy way of confirming completion of the challenge. Alternatively, you could submit public challenges to hand out prizes which is especially useful for music artists and other celebrities to promote their products. All of this was combined with a gamification factor that allowed you to gain points for the completion of challenges.",
+      "startDate": "2013-11-23",
+      "endDate": "2013-11-24",
+      "highlights": [
+        "Second prize at [AngelHack Barcelona 2013](http://www.hackathon.io/apphack3)."
+      ],
+      "contributions": [
+        "Worked on the Node.JS based back-end.",
+        "Designed logo and appearance of the Android app."
+      ],
       "repositories": [
         {
           "url": "https://github.com/dkundel/dare-server",
@@ -52,20 +70,22 @@
         },
         {
           "url": "https://github.com/ungureanuvladvictor/dare-android",
-          "title": "Client Code",
+          "title": "Android App Code",
           "type": "github"  
         }
       ]
     },
     {
       "title": "Social Roadtrip",
-      "website": "",
+      "summary": "This was a project that I created with a friend at the first hackathon we ever attended. It was an 8-hour hackathon by the Facebook World Hack tour in Berlin. We had the idea for the app due to the nature of our university. Studying at an international university, our friends would spread all over the world, especially during summer. As a result, you would end up figuring out usually only way too late that a fellow was in the same city as you. This web app allowed you to plot the trip you were planning to travel on a map and it would inform you about the friends that would be close by the route. This way you could get in contact with them and get a place to crash or meet up for a pint. The project was built with the Google Maps API, the Facebook Graph API and a Node.JS backend.",
       "image": "/images/projects/socialroadtrip.png",
-      "summary": "Bonbon cookie pastry halvah pie oat cake. Tiramisu carrot cake sweet croissant bear claw tiramisu jelly beans cake. Cookie bear claw icing cookie tiramisu chocolate cake dessert brownie.",
-      "startDate": "2015-01-01",
-      "endDate": "2015-12-31",
-      "highlights": [],
-      "contributions": ["Contribution1", "Contribution2"],
+      "website": "",
+      "startDate": "2012-09-11",
+      "endDate": "",
+      "highlights": [
+        "Best Overall App at Facebook World Hack Berlin 2012"
+      ],
+      "contributions": ["Worked on the UI involving Google Maps and the Facebook Graph API"],
       "repositories": []
     }
   ]

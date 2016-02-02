@@ -1,64 +1,10 @@
-mixin resumeEntry(institute, website, time, title)
-  .row.institutional-entry
-    .col-xs-12.col-lg-3
-      p.institute
-        a(href=website, target='_blank')= institute
-      p.timeframe= time
-    .col-xs-12.col-lg-9
-      p.occupation= title
-      block
-      
-mixin educationEntry(value)
-  +resumeEntry(value.institution, value.website || '', value.startDate+' to '+value.endDate, value.studyType + ' in ' + value.area)
-    p Graduated with a GPA of&nbsp;
-      = value.gpa
-      | &nbsp;
-      a(href='https://en.wikipedia.org/wiki/Academic_grading_in_Germany') (German Scale)
-    span.subheading Courses:
-    ul.fa-ul
-      each course in value.courses
-        li
-          i.fa-li.fa.fa-angle-right
-          = course
-      
-mixin workEntry(value)
-  +resumeEntry(value.company, value.website, value.startDate+' to '+value.endDate, value.position)
-    p= value.summary
-    span.subheading Highlights:
-    ul.fa-ul
-      each highlight in value.highlights
-        li
-          i.fa-li.fa.fa-angle-right
-          = highlight
-        
-mixin volunteerEntry(value)
-  +resumeEntry(value.organization, value.website, value.startDate+' to '+value.endDate, value.position)
-    p= value.summary
-    span.subheading Highlights:
-    ul.fa-ul
-      each highlight in value.highlights
-        li
-          i.fa-li.fa.fa-angle-right
-          = highlight
-
-mixin skillEntry(value)
-  .skill-entry.col-xs-12.col-md-6
-    strong= value.name
-    ul.fa-ul
-      each keyword in value.keywords
-        li
-          i.fa-li.fa.fa-angle-right
-          = keyword
-      
-mixin languageEntry(value)
-  p.language-entry
-    strong= value.language
-    |: &nbsp;
-    = value.fluency
+include mixins/resume-mixins.jade
 
 h1#resume Resume
 
-p Bear claw sweet soufflé caramels cupcake donut. Danish topping gummies jujubes ice cream cookie. Liquorice donut marzipan icing.
+:pfm
+  This is just an excerpt of my resume. For the whole resume please follow the link in the bottom of this section.
+  It will allow you to download you a full version as a PDF.
 
 #resumePaper
   .row
@@ -67,21 +13,24 @@ p Bear claw sweet soufflé caramels cupcake donut. Danish topping gummies jujube
         .col-xs-12
           h3 education
           hr
-          each val in resume.education
+          - var education = resume.education.filter((val) => !val.hidden) 
+          each val in education
             +educationEntry(val)
               
       .row
         .col-xs-12
           h3 work experience
           hr
-          each val in resume.work
+          - var work = resume.work.filter((val) => !val.hidden)
+          each val in work
             +workEntry(val)
             
       .row
         .col-xs-12
           h3 volunteering
           hr
-          each val in resume.volunteer
+          - var volunteer = resume.volunteer.filter((val) => !val.hidden)
+          each val in volunteer
             +volunteerEntry(val)
             
       .row
@@ -104,4 +53,4 @@ p Bear claw sweet soufflé caramels cupcake donut. Danish topping gummies jujube
 .row
   .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3 
     p     
-      a#resumeDownloadButton.btn.btn-primary.btn-block(href='/data/dominik-kundel.pdf', target='_blank') Download Resume
+      a#resumeDownloadButton.btn.btn-primary.btn-block(href='/dominik-kundel.pdf', target='_blank') Download Resume

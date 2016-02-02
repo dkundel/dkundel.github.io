@@ -65,8 +65,4 @@ jQuery(function() {
     });
     event.preventDefault();
   });
-  
-  setTimeout(function() {
-    $('body').scrollspy('refresh')
-  }, 1000);
 });

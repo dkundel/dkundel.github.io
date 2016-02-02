@@ -1,0 +1,81 @@
+mixin resumeEntry(institute, website, time, title, location)
+  .row.institutional-entry
+    .col-xs-12.col-md-3.col-pt-3
+      p
+        a.institute(href=website, target='_blank')
+          strong= institute
+        br
+        span.small.timeframe.text-muted= time
+    .col-xs-12.col-md-9.col-pt-9
+      p
+        strong.occupation= title
+        small.location.pull-right.text-muted= location
+      block
+      
+mixin educationEntry(value)
+  +resumeEntry(value.institution, value.website || '', value.startDate+' to '+value.endDate, value.studyType + (value.area ? ' in ' + value.area : ''), value.location)
+    .small
+      p Graduated with a GPA of&nbsp;
+        = value.gpa
+        | &nbsp;
+        a(href='https://en.wikipedia.org/wiki/Academic_grading_in_Germany') (German Scale)
+      p!= pfm(value.details)
+      if value.courses && value.courses.length !== 0
+        strong.subheading Courses:
+        ul.fa-ul
+          each course in value.courses
+            li
+              i.fa-li.fa.fa-angle-right
+              = course
+      
+mixin workEntry(value)
+  +resumeEntry(value.company, value.website, value.startDate+' to '+value.endDate, value.position, value.location)
+    .small
+      p!= pfm(value.summary)
+      if value.highlights && value.highlights.length !== 0
+        strong.subheading Highlights:
+        ul.fa-ul
+          each highlight in value.highlights
+            li
+              i.fa-li.fa.fa-angle-right
+              = highlight
+        
+mixin volunteerEntry(value)
+  +resumeEntry(value.organization, value.website, value.startDate+' to '+value.endDate, value.position, value.location)
+    .small
+      p!= pfm(value.summary)
+      if value.highlights && value.highlights.length !== 0
+        strong.subheading Highlights:
+        ul.fa-ul
+          each highlight in value.highlights
+            li
+              i.fa-li.fa.fa-angle-right
+              = highlight
+
+mixin skillEntry(value)
+  .skill-entry.col-xs-12.col-md-6
+    strong= value.name
+    ul.fa-ul
+      each keyword in value.keywords
+        li.small
+          i.fa-li.fa.fa-angle-right
+          = keyword
+      
+mixin languageEntry(value)
+  .language-entry
+    strong= value.language
+    |: &nbsp;
+    = value.fluency
+    
+    
+mixin awardEntry(value)
+  .row.institutional-entry
+    .col-xs-12
+      p
+        strong= value.title
+        small.pull-right.text-muted= value.date
+        br
+        small.text-muted= 'by ' + value.awarder
+      
+      small!= pfm(value.summary)
+        

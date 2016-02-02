@@ -6,166 +6,254 @@
     "email": "dominik.kundel@gmail.com",
     "phone": "+353 83 161 9709",
     "website": "http://kundel.co",
-    "summary": "TODO",
+    "summary": "I'm a sociable geek with a passion for hackathons, web development, design and teaching.",
     "location": {
-      "address": "902 Vantage Central, Building 4, Central Park",
-      "postalCode": "Dublin 18",
+      "address": "",
+      "postalCode": "",
       "city": "Dublin",
       "countryCode": "IE",
-      "region": ""
+      "region": "",
+      "country": "Ireland"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "dkundel",
+        "username": "@dkundel",
         "url": "https://twitter.com/dkundel"
       },
       {
         "network": "Facebook",
-        "username": "dominik402",
+        "username": "fb.com/dominik402",
         "url": "https://fb.com/dominik402"
       },
       {
+        "network": "LinkedIn",
+        "username": "de.linkedin.com/in/dkundel",
+        "url": "https://de.linkedin.com/in/dkundel"
+      },
+      {
         "network": "GitHub",
-        "username": "dkundel",
+        "username": "github/dkundel",
         "url": "https://github.com/dkundel"
       },
       {
         "network": "CodePen",
-        "username": "dkundel",
+        "username": "codepen/dkundel",
         "url": "https://codepen.io/dkundel"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "dkundel",
-        "url": "https://de.linkedin.com/in/dkundel"
       }
     ]
   },
   "work": [
     {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "company": "Microsoft Corporation",
+      "position": "Software Engineer",
+      "location": "Dublin, Ireland",
+      "website": "https://microsoft.com",
+      "startDate": "2014-11",
+      "endDate": "date",
+      "summary": "Member of the Marketplace team in the Office Extensibility division. Developing features for the [Office Store](https://store.office.com) and the respective in-client experiences.",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Owner of Usability and UI. Providing training and guidelines for UI development.",
+        "Member of the Office Open Source experts providing assistance inside the Office organization for consuming/contributing to OSS."
       ]
     },
     {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "company": "jacobsHack!",
+      "position": "Co-founder and Advisor, former Main-Organizer",
+      "location": "Bremen, Germany",
+      "website": "https://jacobshack.com",
+      "startDate": "2014-02",
+      "endDate": "date",
+      "summary": "Founded jacobsHack! as an initially internal hackathon at Jacobs University Bremen to motivate fellow students to work on cool projects outside of the academic schedule. Main-organized the first externally open jacobsHack! edition in October 2014 as one of the first student hackathons in Europe. Currently active as an advisor for what is at the moment the most international student hackathon in Europe.",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Secured more than 20,000€ from sponsors such as Microsoft, Google and SAP.",
+        "In Fall 2015 180 students from 20 countries and 40 nationalities participated."
       ]
     },
     {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "company": "CodeCombat",
+      "position": "Google Summer of Code Student",
+      "location": "San Francisco, CA, USA",
+      "website": "https://codecombat.com",
+      "startDate": "2014-05",
+      "endDate": "2014-08",
+      "summary": "Improved the coding experience in the CodeCombat editor by by extending the Ace-based editor with various new features such as an improved autocomplete.",
+      "highlights": []
+    },
+    {
+      "company": "Jacobs University Bremen",
+      "position": "Teaching Assistant",
+      "location": "Bremen, Germany",
+      "website": "https://jacobs-university.de",
+      "startDate": "2013-09",
+      "endDate": "2014-06",
+      "summary": "Providing support for the students by holding tutorials, reviewing and grading code assignments and providing on-site assistance during lectures.",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Programming in Java Courses",
+        "Software Engineering Lab"
+      ]
+    },
+    {
+      "company": "Jacobs University Bremen",
+      "position": "Student Assistant Web Development",
+      "location": "Bremen, Germany",
+      "website": "https://jacobs-university.de",
+      "startDate": "2013-04",
+      "endDate": "2014-05",
+      "summary": "Building various different internal tools to improve the work between the students and the Campus Life department at Jacobs University Bremen.",
+      "highlights": [
+        "Created a tool that allows a streamlined process for organizing events at Jacobs replacing the existing paper-based system.",
+        "Maintained the web appearance of the Campus Life department."
+      ],
+      "hidden": true
+    },
+    {
+      "company": "Microsoft Corporation",
+      "position": "Software Development Engineer in Test Intern",
+      "location": "Redmond, WA, USA",
+      "website": "https://microsoft.com",
+      "startDate": "2013-06",
+      "endDate": "2013-08",
+      "summary": "Developed a Local, Component-level Monitoring prototype using an existing, proven monitoring technology within Office365. Provided feedback to the owning engineering on SDK changes required for broader adoption.",
+      "highlights": []
+    },
+    {
+      "company": "SAP SE",
+      "position": "Developer Intern",
+      "location": "Potsdam, Germany",
+      "website": "https://sap.com",
+      "startDate": "2012-07",
+      "endDate": "2012-08",
+      "summary": "Built user interfaces based on the SAP in-memory database system HANA using two different HTML5 and JavaScript based SAP toolkits.",
+      "highlights": [
+        "Created guidelines for developing applications with SAP UI 5",
+        "Used expertise in web development to consult the team in the process of developing a new prototype."
       ]
     }
   ],
   "volunteer": [
     {
       "organization": "CoderDojo",
-      "position": "Teacher",
+      "position": "Teacher and Dojo-Expert for HTML/CSS/JS",
+      "location": "Dublin, Ireland",
       "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
+      "startDate": "2015-02",
+      "endDate": "date",
+      "summary": "Global movement of free coding clubs for young people. Assisting in the local Microsoft Dublin chapter of CoderDojo, running bi-weekly classes to teach young people HTML/CSS/JS and give support for other programming questions.",
+      "highlights": []
+    },
+    {
+      "organization": "The Garage",
+      "position": "Committee Member",
+      "location": "Dublin, Ireland",
+      "website": "http://www.microsoft.com/en-us/garage/",
+      "startDate": "2015-06",
+      "endDate": "date",
+      "summary": "Part of the committee running the Dublin chapter of [The Garage](http://www.microsoft.com/garage). Providing the employees at Microsoft Ireland an environment where they can be creative and work on side projects. Additionally helping to organize bi-weekly SLAC (Skip Lunch And Code) sessions where members can gather, present technology, and ask for input or support. Occasionally giving talks about modern web development or other fascinating technologies.",
+      "highlights": []
+    },
+    {
+      "organization": "Computer Science Club",
+      "position": "Member and President",
+      "location": "Bremen, Germany",
+      "website": "http://jacobs-university.de/",
+      "startDate": "2011-09",
+      "endDate": "2014-06",
+      "summary": "Initially a member and from 2013 to 2014 president of the CS Club at Jacobs University. Organized the yearly Linux Install Fest for freshmen, weekly meetings with various (technical) presentations, preparation sessions for tech interviews and mock interviews with members of the CS Club. Founded jacobsHack! during the duration of the presidency.",
+      "highlights": []
+    },
+    {
+      "organization": "Viva Con Agua e.V.",
+      "position": "Supporter and member of the local chapter",
+      "location": "Bremen, Germany",
+      "website": "http://vivaconagua.org/",
+      "startDate": "2011-06",
+      "endDate": "2014-11",
+      "summary": "Viva Con Agua is a non-profit organization that is trying to solve fresh water problems in countries with the lack of easy access to freshwater installments and sanitary areas. In order to achieve that Viva Con Agua collaborates with artists and musicians to find creative ways of raising money. Raised money at concerts and events of supporting artists and worked on new creative ways to raise money.",
+      "highlights": []
     }
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
+      "institution": "Jacobs University Bremen",
+      "location": "Bremen, Germany",
+      "website": "https://jacobs-university.de",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2011-09",
+      "endDate": "2014-06",
+      "gpa": "1.85",
+      "details": "Bachelor thesis topic: Performance Improvement, Mobile Development and Feature Implementation for [PlanetServer](http://planetserver.eu/). Grade: 1.0",
+      "courses": []
+    },
+    {
+      "institution": "KGS Stuhr-Brinkum - Gymnasium",
+      "location": "Stuhr, Germany",
+      "website": "http://kgs-stuhr.de",
+      "area": "",
+      "studyType": "Abitur (High School leaving Certificate)",
+      "startDate": "2002-08",
+      "endDate": "2011-06",
+      "gpa": "1.6",
+      "details": "Focus on Physics, Mathematics and Chemistry",
+      "courses": [],
+      "hidden": true
     }
   ],
   "awards": [
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
+      "title": "Honorary Membership",
+      "date": "2011-06-05",
+      "awarder": "Deutsche Mathematiker Vereinigung",
+      "summary": "Received an honorary membership in the Deutsche Mathematiker Vereinigung (German Mathematician Association) for excellent results in the final high school exams."
+    },
     {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "title": "Honorary Membership",
+      "date": "2011-06-05",
+      "awarder": "Deutsche Physikalische Gesellschaft",
+      "summary": "Received an honorary membership in the Deutsche Physikalische Gesellschaft (German Physics Association) for excellent results in the final high school exams."
+    },
+    {
+      "title": "Best Overall App",
+      "date": "2011-09-11",
+      "awarder": "Facebook World Hack Judges",
+      "summary": "Awarded 'Best Overall App' by the judges of Facebook World Hack Berlin for the app ['Social Roadtrip'](https://kundel.co/#projects)."
     }
   ],
+  "publications": [],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Programming / Scripting Languages",
       "keywords": [
+        "JavaScript/TypeScript",
         "HTML",
-        "CSS",
-        "Javascript"
+        "CSS/LESS/SASS",
+        "C++",
+        "C#",
+        "Java",
+        "Ruby"
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Frameworks",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "Node.JS / Express",
+        "Angular.JS",
+        "Backbone.JS",
+        "Ionic / Cordova"
       ]
     }
   ],
   "languages": [
     {
+      "language": "German",
+      "fluency": "mother tongue"
+    },
+    {
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "bilingual proficiency"
     }
   ],
-  "interests": [
-    {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ]
+  "interests": [],
+  "references": []
 }

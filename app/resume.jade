@@ -1,0 +1,114 @@
+include pages/mixins/resume-mixins.jade
+
+doctype html.no-js(lang='en')
+head
+    meta(charset='utf-8')
+    |     
+    meta(name='description', content='')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |     
+    title Dominik Kundel - Web Developer
+    |     
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    
+    // Place favicon.ico in the root directory
+    // build:css styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    // build:css styles/resume.css
+    link(rel='stylesheet', href='styles/resume.css')
+    // endbuild
+    // build:js scripts/vendor/modernizr.js
+    script(src='/bower_components/modernizr/modernizr.js')
+    // endbuild
+  |   
+body
+  .container
+    .row
+      .col-xs-12#resumeContainer
+        #mainColumn
+          #headline
+            hgroup#info
+              h1= resume.basics.name.split(' ')[0]
+                span= resume.basics.name.split(' ')[1]
+              h4.text-muted
+                span= resume.basics.label + ' | '
+                span.fa.fa-map-pin
+                - var location = resume.basics.location
+                span#location= location.city + ', ' + (location.country || location.countryCode)
+          #educationContainer
+            h3 education
+            hr
+            - var education = resume.education.filter((val) => !val.hidden);
+            each val, idx in education
+              +educationEntry(val)
+              if idx+1 !== education.length
+                hr.light-border
+          #workContainer
+            h3 work experience
+            hr
+            - var work = resume.work.filter((val) => !val.hidden);
+            each val, idx in work
+              +workEntry(val)
+              if idx+1 !== work.length
+                hr.light-border
+          #volunteeringContainer
+            h3 volunteering
+            hr
+            - var volunteer = resume.volunteer.filter((val) => !val.hidden)
+            each val, idx in volunteer
+              +volunteerEntry(val)
+              if idx+1 !== volunteer.length
+                hr.light-border
+        #sideColumn
+          #socialContainer
+            ul.fa-ul
+              li
+                span.fa-li.fa-fw.fa.fa-envelope
+                a(href='mailto:'+resume.basics.email)= resume.basics.email
+              each val in resume.basics.profiles.slice(0,3)
+                li
+                  span.fa-li.fa-fw.fa(class='fa-'+val.network.toLowerCase())
+                  a(href=val.url)= val.username
+            
+          #aboutContainer
+            h3 about me
+            hr
+            #aboutContent.big.text-muted
+              em
+                != pfm(resume.basics.summary)
+        
+          #skillsContainer
+            h3 skills
+            hr
+            .row
+              each val in resume.skills
+                +skillEntry(val)
+          
+          #awardsContainer
+            h3 awards
+            hr
+            each val, idx in resume.awards
+              +awardEntry(val)
+              if idx+1 !== resume.awards.length
+                hr.light-border
+            
+          #languagesContainer
+            h3 languages
+            hr
+            each val in resume.languages
+              +languageEntry(val)
+              
+          #profilesContainer
+            h3 profiles
+            hr
+            ul.fa-ul
+              li
+                span.fa-li.fa-fw.fa.fa-globe
+                a(href=resume.basics.website) Website
+              each val in resume.basics.profiles
+                li
+                  span.fa-li.fa-fw.fa(class='fa-'+val.network.toLowerCase())
+                  a(href=val.url)= val.username
