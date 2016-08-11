@@ -1,19 +1,19 @@
 {
   "basics": {
     "name": "Dominik Kundel",
-    "label": "Web Developer | Software Engineer",
+    "label": "Developer Evangelist | Web Developer/Designer",
     "picture": "",
     "email": "dominik.kundel@gmail.com",
-    "phone": "+353 83 161 9709",
+    "phone": "",
     "website": "http://kundel.co",
     "summary": "I'm a sociable geek with a passion for hackathons, web development, design and teaching.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Dublin",
-      "countryCode": "IE",
+      "city": "Berlin",
+      "countryCode": "DE",
       "region": "",
-      "country": "Ireland"
+      "country": "Germany"
     },
     "profiles": [
       {
@@ -23,7 +23,7 @@
       },
       {
         "network": "Facebook",
-        "username": "fb.com/dominik402",
+        "username": "fb.com/dkundel",
         "url": "https://fb.com/dominik402"
       },
       {
@@ -45,12 +45,26 @@
   },
   "work": [
     {
+      "company": "Twilio",
+      "position": "Developer Evangelist",
+      "location": "Berlin, Germany",
+      "website": "https://twilio.com",
+      "startDate": "2016-04",
+      "endDate": "date",
+      "summary": "Serving developer communities in Berlin and around the world with the mission to inspire and equip developers.",
+      "highlights": [
+        "Contributing to open source projects",
+        "Speaker at various conferences and meetups.",
+        "Live streaming coding on Twitch.tv."
+      ]
+    },
+    {
       "company": "Microsoft Corporation",
       "position": "Software Engineer",
       "location": "Dublin, Ireland",
       "website": "https://microsoft.com",
       "startDate": "2014-11",
-      "endDate": "date",
+      "endDate": "2016-03",
       "summary": "Member of the Marketplace team in the Office Extensibility division. Developing features for the [Office Store](https://store.office.com) and the respective in-client experiences.",
       "highlights": [
         "Owner of Usability and UI. Providing training and guidelines for UI development.",
@@ -138,7 +152,7 @@
       "location": "Dublin, Ireland",
       "website": "http://coderdojo.com/",
       "startDate": "2015-02",
-      "endDate": "date",
+      "endDate": "2016-03",
       "summary": "Global movement of free coding clubs for young people. Assisting in the local Microsoft Dublin chapter of CoderDojo, running bi-weekly classes to teach young people HTML/CSS/JS and give support for other programming questions.",
       "highlights": []
     },
@@ -148,7 +162,7 @@
       "location": "Dublin, Ireland",
       "website": "http://www.microsoft.com/en-us/garage/",
       "startDate": "2015-06",
-      "endDate": "date",
+      "endDate": "2016-03",
       "summary": "Part of the committee running the Dublin chapter of [The Garage](http://www.microsoft.com/garage). Providing the employees at Microsoft Ireland an environment where they can be creative and work on side projects. Additionally helping to organize bi-weekly SLAC (Skip Lunch And Code) sessions where members can gather, present technology, and ask for input or support. Occasionally giving talks about modern web development or other fascinating technologies.",
       "highlights": []
     },
