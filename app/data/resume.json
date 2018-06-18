@@ -6,7 +6,8 @@
     "email": "dominik.kundel@gmail.com",
     "phone": "",
     "website": "http://kundel.co",
-    "summary": "I'm a sociable geek with a passion for hackathons, web development, design and teaching.",
+    "summary":
+      "I'm a web developer with a passion for design, teaching and serving developers.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -24,7 +25,7 @@
       {
         "network": "Facebook",
         "username": "fb.com/dkundel",
-        "url": "https://fb.com/dominik402"
+        "url": "https://fb.com/dkundel"
       },
       {
         "network": "LinkedIn",
@@ -51,11 +52,13 @@
       "website": "https://twilio.com",
       "startDate": "2016-04",
       "endDate": "date",
-      "summary": "Serving developer communities in Berlin and around the world with the mission to inspire and equip developers.",
+      "summary":
+        "Serving developer communities in Berlin and around the world with the mission to inspire and equip developers.",
       "highlights": [
         "Contributing to open source projects",
-        "Speaker at various conferences and meetups.",
-        "Live streaming coding on Twitch.tv."
+        "Speaker at various conferences and meetups",
+        "Writing technical content",
+        "Building demo applications & proof of concepts"
       ]
     },
     {
@@ -65,7 +68,8 @@
       "website": "https://microsoft.com",
       "startDate": "2014-11",
       "endDate": "2016-03",
-      "summary": "Member of the Marketplace team in the Office Extensibility division. Developing features for the [Office Store](https://store.office.com) and the respective in-client experiences.",
+      "summary":
+        "Member of the Marketplace team in the Office Extensibility division. Developing features for the [Office Store](https://store.office.com) and the respective in-client experiences.",
       "highlights": [
         "Owner of Usability and UI. Providing training and guidelines for UI development.",
         "Member of the Office Open Source experts providing assistance inside the Office organization for consuming/contributing to OSS."
@@ -77,8 +81,9 @@
       "location": "Bremen, Germany",
       "website": "https://jacobshack.com",
       "startDate": "2014-02",
-      "endDate": "date",
-      "summary": "Founded jacobsHack! as an initially internal hackathon at Jacobs University Bremen to motivate fellow students to work on cool projects outside of the academic schedule. Main-organized the first externally open jacobsHack! edition in October 2014 as one of the first student hackathons in Europe. Currently active as an advisor for what is at the moment the most international student hackathon in Europe.",
+      "endDate": "2017-06",
+      "summary":
+        "Founded jacobsHack! as an initially internal hackathon at Jacobs University Bremen to motivate fellow students to work on cool projects outside of the academic schedule. Main-organized the first externally open jacobsHack! edition in October 2014 as one of the first student hackathons in Europe. Currently active as an advisor for what is at the moment the most international student hackathon in Europe.",
       "highlights": [
         "Secured more than 20,000€ from sponsors such as Microsoft, Google and SAP.",
         "In Fall 2015 180 students from 20 countries and 40 nationalities participated."
@@ -91,7 +96,8 @@
       "website": "https://codecombat.com",
       "startDate": "2014-05",
       "endDate": "2014-08",
-      "summary": "Improved the coding experience in the CodeCombat editor by by extending the Ace-based editor with various new features such as an improved autocomplete.",
+      "summary":
+        "Improved the coding experience in the CodeCombat editor by by extending the Ace-based editor with various new features such as an improved autocomplete.",
       "highlights": []
     },
     {
@@ -101,11 +107,10 @@
       "website": "https://jacobs-university.de",
       "startDate": "2013-09",
       "endDate": "2014-06",
-      "summary": "Providing support for the students by holding tutorials, reviewing and grading code assignments and providing on-site assistance during lectures.",
-      "highlights": [
-        "Programming in Java Courses",
-        "Software Engineering Lab"
-      ]
+      "summary":
+        "Providing support for the students by holding tutorials, reviewing and grading code assignments and providing on-site assistance during lectures.",
+      "highlights": ["Programming in Java Courses", "Software Engineering Lab"],
+      "hidden": true
     },
     {
       "company": "Jacobs University Bremen",
@@ -114,7 +119,8 @@
       "website": "https://jacobs-university.de",
       "startDate": "2013-04",
       "endDate": "2014-05",
-      "summary": "Building various different internal tools to improve the work between the students and the Campus Life department at Jacobs University Bremen.",
+      "summary":
+        "Building various different internal tools to improve the work between the students and the Campus Life department at Jacobs University Bremen.",
       "highlights": [
         "Created a tool that allows a streamlined process for organizing events at Jacobs replacing the existing paper-based system.",
         "Maintained the web appearance of the Campus Life department."
@@ -128,7 +134,8 @@
       "website": "https://microsoft.com",
       "startDate": "2013-06",
       "endDate": "2013-08",
-      "summary": "Developed a Local, Component-level Monitoring prototype using an existing, proven monitoring technology within Office365. Provided feedback to the owning engineering on SDK changes required for broader adoption.",
+      "summary":
+        "Developed a Local, Component-level Monitoring prototype using an existing, proven monitoring technology within Office365. Provided feedback to the owning engineering on SDK changes required for broader adoption.",
       "highlights": []
     },
     {
@@ -138,7 +145,8 @@
       "website": "https://sap.com",
       "startDate": "2012-07",
       "endDate": "2012-08",
-      "summary": "Built user interfaces based on the SAP in-memory database system HANA using two different HTML5 and JavaScript based SAP toolkits.",
+      "summary":
+        "Built user interfaces based on the SAP in-memory database system HANA using two different HTML5 and JavaScript based SAP toolkits.",
       "highlights": [
         "Created guidelines for developing applications with SAP UI 5",
         "Used expertise in web development to consult the team in the process of developing a new prototype."
@@ -153,7 +161,8 @@
       "website": "http://coderdojo.com/",
       "startDate": "2015-02",
       "endDate": "2016-03",
-      "summary": "Global movement of free coding clubs for young people. Assisting in the local Microsoft Dublin chapter of CoderDojo, running bi-weekly classes to teach young people HTML/CSS/JS and give support for other programming questions.",
+      "summary":
+        "Global movement of free coding clubs for young people. Assisting in the local Microsoft Dublin chapter of CoderDojo, running bi-weekly classes to teach young people HTML/CSS/JS and give support for other programming questions.",
       "highlights": []
     },
     {
@@ -163,7 +172,8 @@
       "website": "http://www.microsoft.com/en-us/garage/",
       "startDate": "2015-06",
       "endDate": "2016-03",
-      "summary": "Part of the committee running the Dublin chapter of [The Garage](http://www.microsoft.com/garage). Providing the employees at Microsoft Ireland an environment where they can be creative and work on side projects. Additionally helping to organize bi-weekly SLAC (Skip Lunch And Code) sessions where members can gather, present technology, and ask for input or support. Occasionally giving talks about modern web development or other fascinating technologies.",
+      "summary":
+        "Part of the committee running the Dublin chapter of [The Garage](http://www.microsoft.com/garage). Providing the employees at Microsoft Ireland an environment where they can be creative and work on side projects. Additionally helping to organize bi-weekly SLAC (Skip Lunch And Code) sessions where members can gather, present technology, and ask for input or support. Occasionally giving talks about modern web development or other fascinating technologies.",
       "highlights": []
     },
     {
@@ -173,8 +183,10 @@
       "website": "http://jacobs-university.de/",
       "startDate": "2011-09",
       "endDate": "2014-06",
-      "summary": "Initially a member and from 2013 to 2014 president of the CS Club at Jacobs University. Organized the yearly Linux Install Fest for freshmen, weekly meetings with various (technical) presentations, preparation sessions for tech interviews and mock interviews with members of the CS Club. Founded jacobsHack! during the duration of the presidency.",
-      "highlights": []
+      "summary":
+        "Initially a member and from 2013 to 2014 president of the CS Club at Jacobs University. Organized the yearly Linux Install Fest for freshmen, weekly meetings with various (technical) presentations, preparation sessions for tech interviews and mock interviews with members of the CS Club. Founded jacobsHack! during the duration of the presidency.",
+      "highlights": [],
+      "hidden": true
     },
     {
       "organization": "Viva Con Agua e.V.",
@@ -183,8 +195,10 @@
       "website": "http://vivaconagua.org/",
       "startDate": "2011-06",
       "endDate": "2014-11",
-      "summary": "Viva Con Agua is a non-profit organization that is trying to solve fresh water problems in countries with the lack of easy access to freshwater installments and sanitary areas. In order to achieve that Viva Con Agua collaborates with artists and musicians to find creative ways of raising money. Raised money at concerts and events of supporting artists and worked on new creative ways to raise money.",
-      "highlights": []
+      "summary":
+        "Viva Con Agua is a non-profit organization that is trying to solve fresh water problems in countries with the lack of easy access to freshwater installments and sanitary areas. In order to achieve that Viva Con Agua collaborates with artists and musicians to find creative ways of raising money. Raised money at concerts and events of supporting artists and worked on new creative ways to raise money.",
+      "highlights": [],
+      "hidden": true
     }
   ],
   "education": [
@@ -197,7 +211,8 @@
       "startDate": "2011-09",
       "endDate": "2014-06",
       "gpa": "1.85",
-      "details": "Bachelor thesis topic: Performance Improvement, Mobile Development and Feature Implementation for [PlanetServer](http://planetserver.eu/). Grade: 1.0",
+      "details":
+        "Bachelor thesis topic: Performance Improvement, Mobile Development and Feature Implementation for [PlanetServer](http://planetserver.eu/). Grade: 1.0",
       "courses": []
     },
     {
@@ -219,43 +234,26 @@
       "title": "Honorary Membership",
       "date": "2011-06-05",
       "awarder": "Deutsche Mathematiker Vereinigung",
-      "summary": "Received an honorary membership in the Deutsche Mathematiker Vereinigung (German Mathematician Association) for excellent results in the final high school exams."
+      "summary":
+        "Received an honorary membership in the Deutsche Mathematiker Vereinigung (German Mathematician Association) for excellent results in the final high school exams."
     },
     {
       "title": "Honorary Membership",
       "date": "2011-06-05",
       "awarder": "Deutsche Physikalische Gesellschaft",
-      "summary": "Received an honorary membership in the Deutsche Physikalische Gesellschaft (German Physics Association) for excellent results in the final high school exams."
-    },
-    {
-      "title": "Best Overall App",
-      "date": "2011-09-11",
-      "awarder": "Facebook World Hack Judges",
-      "summary": "Awarded 'Best Overall App' by the judges of Facebook World Hack Berlin for the app ['Social Roadtrip'](https://kundel.co/#projects)."
+      "summary":
+        "Received an honorary membership in the Deutsche Physikalische Gesellschaft (German Physics Association) for excellent results in the final high school exams."
     }
   ],
   "publications": [],
   "skills": [
     {
       "name": "Programming / Scripting Languages",
-      "keywords": [
-        "JavaScript/TypeScript",
-        "HTML",
-        "CSS/LESS/SASS",
-        "C++",
-        "C#",
-        "Java",
-        "Ruby"
-      ]
+      "keywords": ["JavaScript/TypeScript", "HTML", "CSS/LESS/SASS", "C#"]
     },
     {
-      "name": "Frameworks",
-      "keywords": [
-        "Node.JS / Express",
-        "Angular.JS",
-        "Backbone.JS",
-        "Ionic / Cordova"
-      ]
+      "name": "Frameworks / Libraries",
+      "keywords": ["Node.js", "React/Preact", "Angular", "Angular.JS"]
     }
   ],
   "languages": [
